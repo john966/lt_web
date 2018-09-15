@@ -50,9 +50,12 @@ userinfo_path = os.path.join(filedata_dir,"userinfo")  # 用户文件
 ```textmate
 cd myproject/lt_web/;python3.6 manager.py /dev/null 2>&1 &
 ```
-##### 7.以上为完整的使用方式,启动到6步骤的时候可以在你的浏览器中访问即可。
+##### 7.以上为完整的使用方式,启动到6步骤的时候可以在你的浏览器中访问即可。(访问账户信息在本系统中data目录下的userinfo下)
 
-##### 8.本系统效果展示：
+##### 8.添加账户
+本系统中data目录下的userinfo下一行行添加账户与密码信息
+
+##### 9.本系统效果展示：
 登录效果：
 
 ![avatar](IMG/login.png)
