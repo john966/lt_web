@@ -12,21 +12,13 @@ make
 make install
 ln -s /usr/local/python3.6/bin/python3.6 /usr/bin/python3.6
 ```
-##### 2. 安装 pip
-```textmate
-curl -o https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py speedtest.py
-chmod u+x speedtest.py 
-chmod u+x speedtest.py 
-./speedtest.py 
-```
-
-##### 3.安装 Flask
+##### 2.安装 Flask
 ```textmate
 pip3.6 install flask
 pip3.6 install gevent-websocket
 
 ```
-##### 4.配置环境
+##### 3.配置环境
 ```textmate
 mkdir myproject
 cd myproject/
@@ -34,7 +26,7 @@ python3.6 -m venv venv
 source venv/bin/activate
 deactivate
 ```
-##### 5.配置代码文件
+##### 4.配置代码文件
 lt_web/config/settings.py
 ```python
 filedata_dir = os.path.join(BASE_DIR,"data")  #读取您的文件目录 (例如：/etc/系统目录下或者把配置文件放在本系统的data目录下然后以软链接的方式到相关服务的配置目录)
@@ -46,16 +38,16 @@ filedata_path_bak = os.path.join(filedata_dir,"chap-secrets.bak")  # 备份配�
 userinfo_path = os.path.join(filedata_dir,"userinfo")  # 用户文件
 ```
 
-##### 6.上传代码到您的服务器上并运行即可,你也可以搭建uwsgi+nginx+flask发布本程序
+##### 5.上传代码到您的服务器上并运行即可,你也可以搭建uwsgi+nginx+flask发布本程序
 ```textmate
 cd myproject/lt_web/;python3.6 manager.py /dev/null 2>&1 &
 ```
-##### 7.以上为完整的使用方式,启动到6步骤的时候可以在你的浏览器中访问即可。(访问账户信息在本系统中data目录下的userinfo下)
+##### 6.以上为完整的使用方式,启动到6步骤的时候可以在你的浏览器中访问即可。(访问账户信息在本系统中data目录下的userinfo下)
 
-##### 8.添加账户
+##### 7.添加账户
 本系统中data目录下的userinfo下一行行添加账户与密码信息
 
-##### 9.本系统效果展示：
+##### 8.本系统效果展示：
 登录效果：
 
 ![avatar](IMG/login.png)
