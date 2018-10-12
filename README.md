@@ -4,13 +4,20 @@
 
 ##### 1. 安装python3.6 (如系统环境已经安装请忽略此步骤)
 ```textmate
+# 安装python3.6可能使用的依赖
+
+yum install -y openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel zlib zlib-devel
+
+yum install -y readline-devel.x86_64  # (一定要安装这个包，不然升级完成后会发现删除退格键用不了)
+
 wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tgz
 tar zxvf Python-3.6.3.tgz
 cd Python-3.6.3
-./configure --prefix=/usr/local/python3.6
+./configure --with-ssl --prefix=/usr/local/python3.6
 make
 make install
 ln -s /usr/local/python3.6/bin/python3.6 /usr/bin/python3.6
+ln -s /usr/local/python3/bin/pip3.6 /usr/bin/pip3
 ```
 ##### 2.安装 Flask
 ```textmate
