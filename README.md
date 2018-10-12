@@ -21,8 +21,8 @@ ln -s /usr/local/python3/bin/pip3.6 /usr/bin/pip3
 ```
 ##### 2.安装 Flask
 ```textmate
-pip3.6 install flask
-pip3.6 install gevent-websocket
+pip3 install flask
+pip3 install gevent-websocket
 
 ```
 ##### 3.配置环境
